@@ -8,7 +8,7 @@ end
 
 def select_name_and_motto_of_char_with_longest_motto
   "SELECT characters.name, characters.motto from characters
-  HAVING MAX LENGTH(characters.motto) 
+  HAVING MAX LENGTH(characters.motto)"
 end
 
 
