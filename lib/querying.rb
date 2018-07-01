@@ -8,7 +8,7 @@ end
 
 def select_name_and_motto_of_char_with_longest_motto
   "SELECT characters.name, characters.motto from characters
-  WHERE characters.motto = (SELECT GREATEST(characters.motto))"
+  WHERE characters.motto.count = (SELECT GREATEST(characters.motto))"
 end
 
 
